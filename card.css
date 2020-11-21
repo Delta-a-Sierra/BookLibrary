@@ -16,13 +16,6 @@
   margin: 50px 20px;
 }
 
-.card:hover {
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .text-container {
   width: 80%;
   padding: 50px 0 20px 0;
@@ -42,7 +35,7 @@
 .card-fave {
   width: 300px;
   height: 24px;
-  background-color: #818181;
+  background-color: #5BC3EB;
   text-align: center;
 }
 
@@ -51,17 +44,17 @@
   height: 25px;
 }
 
-.fav-color {
-  background-color: #5BC3EB;
-}
-
 .card-options {
   width: 300px;
   height: 55px;
+  background-color: #545454;
+  border-radius: 0 0 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-shadow: 0 20px 20px #1d1d1d;
+          box-shadow: 0 20px 20px #1d1d1d;
 }
 
 .card-options img {
@@ -73,68 +66,17 @@
 .del-option {
   width: 115px;
   height: 55px;
-  background-color: #545454;
   border-right: 1px solid #3d3d3d8c;
-  border-radius: 0 0 0px 20px;
-}
-
-.del-option:hover {
-  background-color: #5BC3EB;
 }
 
 .confirm-option {
   width: 70px;
   height: 55px;
-  background-color: #545454;
-}
-
-.confirm-option:hover {
-  background-color: #5BC3EB;
 }
 
 .edit-option {
   width: 115px;
   height: 55px;
   border-left: 1px solid #3d3d3d8c;
-  background-color: #545454;
-  border-radius: 0 0 20px 0;
 }
-
-.edit-option:hover {
-  background-color: #5BC3EB;
-}
-
-.text-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-}
-
-.text-wrapper div {
-  padding: 10px 0;
-}
-
-.text-wrapper h2 {
-  padding-bottom: 5px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #333333;
-  font-family: 'Montserrat', sans-serif;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=card.css.map */

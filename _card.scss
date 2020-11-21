@@ -1,0 +1,115 @@
+
+$card-upper: #FFFFFF;
+$card-fave-color: #5BC3EB;
+$card-not-fave-color: #818181;
+$opt-panel-color: #545454;
+$option-bd-color: #3d3d3d8c;
+
+.card-container{
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 50px 20px;
+
+    &:hover{
+        transition: ease 0.5s;
+        transform: scale(1.1);;   
+    }
+}
+
+.text-container{
+    width: 80%;
+    padding: 50px 0 20px 0 ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-upper{
+    width: 300px;
+    height: 322px;
+    background-color: $card-upper;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 20px black;
+}
+
+.card-fave{
+    width: 300px;
+    height: 24px;
+    background-color: $card-not-fave-color;
+    text-align: center;
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.fav-color{
+    background-color: $card-fave-color;
+}
+
+.card-options{
+    width: 300px;
+    height: 55px; 
+    display: flex;
+    text-align: center;
+
+    img{
+        width: 25px;
+        height: 25px;
+        padding-top: 15px;
+    }
+}
+
+.del-option{
+    width:115px ;
+    height: 55px;
+    background-color: $opt-panel-color;
+    border-right: 1px solid $option-bd-color;
+    border-radius: 0 0 0px 20px;
+
+    &:hover{
+        background-color: $card-fave-color;
+    }
+}
+
+.confirm-option{
+    width: 70px;
+    height: 55px;
+    background-color: $opt-panel-color;
+
+    &:hover{
+        background-color: $card-fave-color;
+    }
+}
+
+.edit-option{
+    width:115px ;
+    height: 55px;
+    border-left: 1px solid $option-bd-color;
+    background-color: $opt-panel-color;
+    border-radius: 0 0 20px 0;
+
+    &:hover{
+        background-color: $card-fave-color;
+    }
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    div{
+        padding: 10px 0;
+    }
+
+    h2{
+        padding-bottom: 5px;
+    }
+}

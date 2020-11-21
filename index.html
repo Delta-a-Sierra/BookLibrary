@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Objests</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <title>My Library</title>
 </head>
 <body>
-    <div class="card-holder container">
-        <div class = card>
-            <h2 class="title info">Title: <span>Harry Potter</span></h2>
-            <h2 class="title info">Author: <span>J.R Rowling</span></h2>
-            <h2 class="title info">Page Count: <span>120</span></h2>
-            <h2 class="title info">Read: <span>true</span></h2>
+    <template id="card-temp"> 
+        <div class="card">
+            <div class="card-upper">
+                <div class="text-container">
+                    <div class="text-wrapper">
+                        <div>
+                            <h2>Title</h2>
+                            <h3 class="title-txt">Harry Potter</h3>
+                        </div>
+                        <div>
+                            <h2>Author</h2>
+                            <h3 class="author-txt">J.R Rowling</h3>
+                        </div>
+                        <div>
+                            <h3 class="page-count-txt">Page Count: <span><span>20/300</span> </h3><br>
+                            <h3 class="read-txt">Read: <span>Yes</span></h3>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+            <div class="card-fave">
+                <img src="./images/baseline_star_rate_white_18dp.png">
+            </div>
+            <div class="card-options">
+                <div class="del-option">
+                    <img src="./images/baseline_delete_white_18dp.png">
+                </div>
+                <div class="confirm-option">
+                    <img src="./images/baseline_check_white_18dp.png">
+                </div>
+                <div class="edit-option">
+                    <img src="./images/baseline_create_white_18dp.png">
+                </div>
+            </div>
         </div>
+    </template>
+    <main>
+        <div class="card-container">
 
-    </div>
+        </div>      
+    </main>
 </body>
 <footer>
     <script src="./main.js"></script>
