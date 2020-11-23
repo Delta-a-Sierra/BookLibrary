@@ -106,6 +106,10 @@ addBookToLibrary('Test4', 'Author4', 100, false, true);
 addBookToLibrary('Test5', 'Author5', 200, false, false);
 addBookToLibrary('Test6', 'Author6', 300, false, true);
 addBookToLibrary('Test7', 'Author7', 100, false, true);
+addBookToLibrary('Test8', 'Author8', 300, false, true);
+addBookToLibrary('Test9', 'Author9', 100, false, true);
+addBookToLibrary('Test10', 'Author10', 300, false, true);
+addBookToLibrary('Test11', 'Author11', 100, false, true);
 
 populateLibary();
 
@@ -129,3 +133,26 @@ faveBtns.forEach(button => {
         toggleFave(button);
     });
 });
+
+const showPopup = () =>{
+    const popUpWindow = document.querySelector('.popup')
+    popUpWindow.classList.remove('hidden')
+}
+
+const hidePopup = () =>{
+    const popUpWindow = document.querySelector('.popup')
+    popUpWindow.classList.add('hidden')
+}
+
+
+
+
+const addBtn = document.querySelector('.add-btn-wrapper button');
+addBtn.addEventListener('click', () => {
+    showPopup();
+});
+
+const cancelBtn = document.querySelector('.cancel-btn');
+cancelBtn.addEventListener('click', () => {
+    hidePopup()
+})

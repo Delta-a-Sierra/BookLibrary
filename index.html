@@ -45,11 +45,67 @@
             </div>
         </div>
     </template>
+
+    <div class="popup hidden">
+        <div class="blur">
+            <div class="popup-wrapper">
+                <form>
+                    <div>
+                        <label for="title"><b>Title</b></label>
+                        <input type="text" placeholder="Enter title" name="title" required>
+                    </div>
+                    <div>
+                        <label for="author"><b>Author</b></label>
+                        <input type="text" placeholder="Enter Author" name="author" required>
+                    </div>
+                    <div class="row mini-input">
+                        <div>
+                            <label for="page-num"><b>Page Number</b></label>
+                            <input type="text" placeholder="Enter PN"  name="page-num" required>
+                        </div>
+                        <div>
+                            <label for="title"><b>Read</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="read">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="confirm-btn">Confirm</button>
+                        <button class="cancel-btn">Cancel</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <aside>   
+        <div class="dropdown-wrapper">
+            <div class="sort-by">Sort By: <span>Favourites</span></div>
+            <div class="dropdown-list">
+                <ul>
+                    <li><button>A-Z</button></li>
+                    <li><button>Author</button></li>
+                    <li><button>Favourites</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="add-btn-wrapper">
+            <button>
+                <img src="./images/add.png">
+            </button>
+        </div>
+    </aside>
     <main>
         <div class="card-container">
-
         </div>      
     </main>
+   
 </body>
 <footer>
     <script src="./main.js"></script>

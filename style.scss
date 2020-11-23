@@ -1,6 +1,11 @@
 @import "./card";
+@import "./popup";
+@import "./aside";
 
 $page-bg-color: #333333;
+$dropdown-color: rgb(54, 54, 54);
+$list-hover-color: #414141;
+$card-fave-color: #5BC3EB;
 
 
 * {
@@ -11,6 +16,7 @@ $page-bg-color: #333333;
 body{
     background-color: $page-bg-color;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 

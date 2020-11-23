@@ -1,0 +1,93 @@
+$page-bg-color: #333333;
+$dropdown-color: rgb(54, 54, 54);
+$list-hover-color: #414141;
+$card-fave-color: #5BC3EB;
+
+
+aside{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 90px 20px;
+    position: fixed;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+.add-btn-wrapper{
+
+    button{
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 100%;
+        border: none;
+
+        &:hover{
+            background-color: $card-fave-color;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.dropdown-wrapper{
+    background-color: $page-bg-color;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    &:hover{
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.445);
+    }
+}
+
+.sort-by{
+    min-width: 150px;
+}
+
+.sort-by:hover + .dropdown-list{
+    display: block; 
+}
+
+
+.dropdown-list{
+    padding-top: 15px;
+    display: none;
+    width: 100%;
+    li{
+        list-style: none;
+        padding: 5px 0;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px 5px;
+        color: white;
+        background-color: $dropdown-color;
+        border: none;
+        font-size: 1em;
+
+        &:hover{
+            background-color: $list-hover-color ;
+        }
+
+        &:focus{
+           outline: none;
+           background-color: $card-fave-color;
+        }
+    }
+
+    &:hover{
+        display: block;
+    }
+}
