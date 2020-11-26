@@ -14,7 +14,9 @@
             <div class="card-upper">
                 <div class="text-container">
                     <div class="text-wrapper">
+                        <h3 class="id-txt hidden"></h3>
                         <div>
+                            <p class="id-txt hidden"></p>
                             <h2>Title</h2>
                             <h3 class="title-txt">Harry Potter</h3>
                         </div>
@@ -23,13 +25,14 @@
                             <h3 class="author-txt">J.R Rowling</h3>
                         </div>
                         <div>
-                            <h3 class="page-count-txt">Page Count: <span><span>20/300</span> </h3><br>
+                            <h3 class="page-count-txt">Page Count: <span>20/300</span> </h3><br>
                             <h3 class="read-txt">Read: <span>Yes</span></h3>
                         </div>                            
                     </div>
                 </div>
             </div>
             <div class="card-fave">
+                <h6 class="isFave hidden"></h6>
                 <img src="./images/baseline_star_rate_white_18dp.png">
             </div>
             <div class="card-options">
@@ -51,6 +54,7 @@
             <div class="popup-wrapper">
                 <form>
                     <div>
+                        <input type="text" name="id" class="hidden">
                         <label for="title"><b>Title</b></label>
                         <input type="text" placeholder="Enter title" name="title" required>
                     </div>
@@ -60,8 +64,8 @@
                     </div>
                     <div class="row mini-input">
                         <div>
-                            <label for="page-num"><b>Page Number</b></label>
-                            <input type="text" placeholder="Enter PN"  name="page-num" required>
+                            <label for="pageNum"><b>Page Number</b></label>
+                            <input type="text" placeholder="Enter PN"  name="pageNum" required>
                         </div>
                         <div>
                             <label for="title"><b>Read</b></label>
@@ -70,13 +74,16 @@
                                 <span class="slider round"></span>
                             </label>
                         </div>
+                    
                     </div>
+
                     <div class="row">
-                        <button class="confirm-btn">Confirm</button>
+                        <button class="confirm-btn" type="submit">Confirm</button>
                         <button class="cancel-btn">Cancel</button>
                     </div>
-                    
+            
                 </form>
+
             </div>
             
         </div>
@@ -88,9 +95,9 @@
             <div class="sort-by">Sort By: <span>Favourites</span></div>
             <div class="dropdown-list">
                 <ul>
-                    <li><button>A-Z</button></li>
-                    <li><button>Author</button></li>
-                    <li><button>Favourites</button></li>
+                    <li><button id="sort-title-az">A-Z</button></li>
+                    <li><button id="sort-author-az">Author</button></li>
+                    <li><button id="sort-fave">Favourites</button></li>
                 </ul>
             </div>
         </div>
@@ -108,6 +115,6 @@
    
 </body>
 <footer>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </footer>
 </html>
